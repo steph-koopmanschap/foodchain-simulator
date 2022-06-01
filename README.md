@@ -1,5 +1,7 @@
 # The food chain simulator is a simulation of organisms based on foodchain dynamics
 
+Anyone is free to contribute, copy, or change this project.
+
 ## This simulation consists of 3 types of organisms:
 
     Plants (are eaten by herbivores and omnivores)
