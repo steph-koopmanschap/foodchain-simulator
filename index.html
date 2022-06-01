@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Food Chain Simulator</title>
+  <meta name="description" content="Food Chain Simulator">
+  <meta name="author" content="Steph Koopmanschap">
+
+  <meta property="og:title" content="Food Chain Simulator">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://foodchainsimulator.lan/index.html/">
+  <meta property="og:description" content="Food Chain Simulator">
+  <meta property="og:image" content="image.png">
+
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <center>
+    <h1>Food Chain Simulator</h1>
+    <h2>Version 1.0</h2>
+    <p>The food chain simulator is a simulation of organisms based on foodchain dynamics</p>
+    <p>This simulation consists of 3 types of organisms:</p>
+    <ul>
+        <li><strong>Plants</strong> (are eaten by herbivores and omnivores)</li>
+        <li><strong>Herbivores</strong> (are eaten by carnivores and omnivores)</li>
+        <li><strong>Carnivores</strong> (are eaten by omnivores)</li>
+        <li><strong>Omnivores</strong></li>
+    </ul>
+    <p>These are the organisms that currently exist in the simulation</p>
+    <ul>
+        <li><strong>Grass:</strong> Fast reproduction, low food value. Light green.</li>
+        <li><strong>Vegetable:</strong> Slow reproduction, high food value. Dark green.</li>
+        <li><strong>Cow:</strong> Eats grass and vegetables, slow speed, slow reproduction. Light yellow.</li>
+        <li><strong>Rabbit:</strong> Eats grass and vegetables, high speed, high reproduction. Dark yellow</li>
+        <li><strong>Wolf:</strong> Eats cows and rabbits, high speed, medium reproduction, Light red</li>
+        <li><strong>Human:</strong> Eats everything, medium speed, slow reproduction. Blue.</li>
+    </ul>
+
+    <h3>Future versions:</h3>
+    <ul>
+        <li>More interactivity to control the simulation</li>
+        <li>More different organisms</li>
+        <li><strong>Lion:</strong> Eats cows, high speed, slow reproduction. Dark red.</li>
+        <li>Animal species to be more selective about diet. Cows should only eat grass for example.</li>
+        <li>Animal color trasparancy based on health</li>
+        <li>Fix bugs</li>
+    </ul>
+
+    <h3>Bugs:</h3>
+    <ul>
+        <li>Chasing direction is wrong, because of wrong vector frame of reference (using screen reference, instead of local animal reference)</li>
+        <li>Chasing mechanic does not make predator stop chasing prey even if it is eaten already or out of sight</li>
+        <li>rapid plant growth causes the simulation to freeze quickly</li>
+    </ul>
+    <h2>Input: </h2>
+    <label>Starting plants</label>
+    <input type="value" class="input"></input>
+    <button id="startBtn" onClick="">START</button>
+    </center>
+
+    
+    <script src="main.js"></script>
+
+</body>
+</html>
