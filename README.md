@@ -2,6 +2,8 @@
 
 Anyone is free to contribute, copy, or change this project.
 
+This project is loosely inspired by Conway's Game of Life.
+
 ## This simulation consists of 3 types of organisms:
 
     Plants (are eaten by herbivores and omnivores)
